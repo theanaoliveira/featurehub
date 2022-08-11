@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  featurehub-app:
+    build:
+      context: .
+      dockerfile: FeatureHub.Console/Dockerfile
+    environment:
+      HUB_URL: "http://host.docker.internal:8085"
+      HUB_API_KEY: "{KEY}"
+    depends_on:
+      - hub
+    networks:
+      - hub-network
+
+  hub:
+    image: featurehub/party-server:latest
+    ports:
+      - 8085:8085
+    volumes:
+      - hubdb:/db
+    networks:
+      - hub-network
+
+networks:
+  hub-network:
+
+volumes:
+  hubdb:

@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  featurehub-app:
+    image: ${DOCKER_REGISTRY-}featurehub-app
+    build:
+      context: .
+      dockerfile: FeatureHub.Console/Dockerfile
+    networks:
+      - hub-network
+
+networks:
+  hub-network:
