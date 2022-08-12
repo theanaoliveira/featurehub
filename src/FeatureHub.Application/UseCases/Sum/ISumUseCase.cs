@@ -1,4 +1,4 @@
-﻿namespace FeatureHub.Console.UseCases.Sum
+﻿namespace FeatureHub.Application.UseCases.Sum
 {
     public interface ISumUseCase
     {

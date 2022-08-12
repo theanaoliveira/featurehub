@@ -9,5 +9,13 @@ services:
     networks:
       - hub-network
 
+  feature-api:
+    image: ${DOCKER_REGISTRY-}feature-api
+    build:
+      context: .
+      dockerfile: FeatureHub.Api/Dockerfile
+    networks:
+      - hub-network
+
 networks:
   hub-network:

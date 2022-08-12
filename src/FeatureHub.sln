@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureHub.Console", "FeatureHub.Console\FeatureHub.Console.csproj", "{B69E9DB5-1963-4DEF-AB16-76527D5ADAE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeatureHub.Console", "FeatureHub.Console\FeatureHub.Console.csproj", "{B69E9DB5-1963-4DEF-AB16-76527D5ADAE2}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{59985227-0B73-49FB-99B0-8C38B6AC3B25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureHub.Api", "FeatureHub.Api\FeatureHub.Api.csproj", "{4C86DB99-45CC-4DC9-A833-01A444DC470F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureHub.Domain", "FeatureHub.Domain\FeatureHub.Domain.csproj", "{E8566FC4-75E3-404D-8EF8-09041E4AA463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureHub.Application", "FeatureHub.Application\FeatureHub.Application.csproj", "{8F90D58B-820C-4402-BB84-F9D094AB5F82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureHub.Infrastructure", "FeatureHub.Infrastructure\FeatureHub.Infrastructure.csproj", "{ABA1FA85-72D3-460B-9EAE-587E070B7AFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{59985227-0B73-49FB-99B0-8C38B6AC3B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59985227-0B73-49FB-99B0-8C38B6AC3B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59985227-0B73-49FB-99B0-8C38B6AC3B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C86DB99-45CC-4DC9-A833-01A444DC470F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C86DB99-45CC-4DC9-A833-01A444DC470F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C86DB99-45CC-4DC9-A833-01A444DC470F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C86DB99-45CC-4DC9-A833-01A444DC470F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8566FC4-75E3-404D-8EF8-09041E4AA463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8566FC4-75E3-404D-8EF8-09041E4AA463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8566FC4-75E3-404D-8EF8-09041E4AA463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8566FC4-75E3-404D-8EF8-09041E4AA463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F90D58B-820C-4402-BB84-F9D094AB5F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F90D58B-820C-4402-BB84-F9D094AB5F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F90D58B-820C-4402-BB84-F9D094AB5F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F90D58B-820C-4402-BB84-F9D094AB5F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABA1FA85-72D3-460B-9EAE-587E070B7AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABA1FA85-72D3-460B-9EAE-587E070B7AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABA1FA85-72D3-460B-9EAE-587E070B7AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABA1FA85-72D3-460B-9EAE-587E070B7AFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
