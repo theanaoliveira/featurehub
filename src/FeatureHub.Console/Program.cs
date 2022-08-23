@@ -6,16 +6,16 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 IHost host = Host.CreateDefaultBuilder()
-    .ConfigureServices((context, services) =>
-    {
-        services.ConfigHub();
-        IServiceCollection serviceCollection = services.RegisterCases();
-    })
+    //.ConfigureServices((context, services) =>
+    //{
+    //    services.ConfigHub();
+    //    services.RegisterCases();
+    //})
     .Build();
 
-var usecase = host.Services.GetService<IMonitorFeatureUseCase>();
-var config = host.Services.GetService<IFeatureHubConfig>();
+//var usecase = host.Services.GetService<IMonitorFeatureUseCase>();
+//var config = host.Services.GetService<IFeatureHubConfig>();
 
-usecase.Execute();
+//usecase.Execute();
 
 await host.RunAsync();

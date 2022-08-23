@@ -1,6 +1,5 @@
-﻿using FeatureHub.Api.Filters;
-using FeatureHub.Application.UseCases.Sum;
-using Microsoft.AspNetCore.Http;
+﻿using FeatureHub.Application.UseCases.Sum;
+using Gcsb.Connect.Pkg.FeatureHub.Application.Attributes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FeatureHub.Api.Controllers
@@ -17,7 +16,7 @@ namespace FeatureHub.Api.Controllers
         }
 
         [HttpPost]
-        [Features("SOMA_DEFAULT")]
+        [Features("SOMA")]
         [ProducesResponseType(typeof(int), 200)]
         [Route("Sum")]
         public IActionResult SumValues([FromBody] SumRequest input)

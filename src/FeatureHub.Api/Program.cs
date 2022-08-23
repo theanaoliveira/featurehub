@@ -1,13 +1,15 @@
 using FeatureHub.Api.Injection;
+using FeatureHub.Domain.Features;
+using Gcsb.Connect.Pkg.FeatureHub.Infrastructure.Injection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.ConfigHub(typeof(AppFeatures));
 builder.Services.RegisterCases();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -18,4 +20,5 @@ app.UseSwaggerUI();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
 app.Run();
